@@ -54,12 +54,13 @@ public enum NumRom {
         return ArNum;
     }
 
-    public static String reverseRome (int a) {
+    public static String reverseRome(int a) {
         StringBuilder s = new StringBuilder();
         List<NumRom> numRomList = Arrays.asList(NumRom.values());
         numRomList.sort((((o1, o2) -> o1.getValue() < o2.getValue() ? 1 : -1)));
-        for (NumRom e: numRomList) {
-            for (int i = 0; i<4; i++){
+//        TODO просто как заметка на будущее, старайся не делать цикл в цикле. Когда начнешь изучать временную сложность алгоритмов, поймешь почему)
+        for (NumRom e : numRomList) {
+            for (int i = 0; i < 4; i++) {
                 if (e.getValue() <= a) {
                     a -= e.getValue();
                     s.append(e);
