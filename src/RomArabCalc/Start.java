@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Start {
     public static void main(String[] args) throws Exception {
+        System.out.println("что что ттуутту");
         System.out.println("Введите выражение: ");
         Scanner sc = new Scanner(System.in);
         String boom = sc.nextLine();
