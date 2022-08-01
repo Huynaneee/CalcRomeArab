@@ -32,13 +32,11 @@ public class Operation {
                     a += arr[i];
                     if (i == arr.length -2){
                         a += arr[i+1];
-                        System.out.println("");
-                        System.out.println("doqqq");
                     }
                 }
                 else if (arr[i] < arr[i+1]){
                     a += (arr[i+1]-arr[i]);
-                    System.out.println("doshli");
+
 
                 }
             }

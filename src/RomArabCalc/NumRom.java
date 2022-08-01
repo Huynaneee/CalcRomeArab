@@ -17,14 +17,14 @@ public enum NumRom {
         return value;
     }
 
-    public static boolean flag(String[] str) {
+    public static boolean flag(String str) {
 
         int count = 0;
 
         String[] obrazArr = new String[]{"I", "V", "X", "L", "C", "D", "M"};
-        for (int i = 0; i < str.length; i++) {
+        for (int i = 0; i < str.length(); i++) {
             for (int j = 0; j < obrazArr.length; j++) {
-                if (str[i].equals(obrazArr[j])) {
+                if (String.valueOf(str.charAt(i)).equals(obrazArr[j])) {
                     count++;
                 }
             }
